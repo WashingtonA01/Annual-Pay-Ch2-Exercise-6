@@ -7,14 +7,20 @@ using namespace std;
 
 int main()
 {
-	float payAmount = 2200.0;
-	int payPeriods = 26;
+	float payAmount, payPeriods;
+	
+
+	cout << "How many pay periods do you have in a year?:" << endl;
+
+	cin >> payPeriods; 
+
+	cout << "How much per paycheck are you being paid?" << endl;
+
+	cin >> payAmount;
+
 	float annualPay = payAmount * payPeriods;
 
-	cout << "Paycheck amount every two weeks:" << " " << payAmount << endl;
+	cout << "Your total annual pay is:" << " " << annualPay;
 
-	cout << "Pay periods per year:" << " " << payPeriods << endl;
-
-	cout << "Total annual pay:" << " " << annualPay;
-
+	
 }
